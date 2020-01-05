@@ -13,7 +13,22 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      {
+        src: 'https://www.googletagmanager.com/gtag/js?id=UA-155112763-1', 
+        async: true
+      },
+      { 
+        innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-155112763-1');
+        `
+      }
+    ],
+    __dangerouslyDisableSanitizers: ['script']
   },
   /*
   ** Customize the progress-bar color

@@ -425,7 +425,7 @@ export default [
   {
     "id": 29549,
     "title": "Star Wars hoodie",
-    "price": 14,
+    "price": 25,
     "sizes": [
       "S",
       "M",

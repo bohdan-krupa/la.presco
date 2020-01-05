@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2>Зимова колекція</h2>
+    <h2>New collection</h2>
     <div class="items-container">
       <Item
         v-for="item in items"
